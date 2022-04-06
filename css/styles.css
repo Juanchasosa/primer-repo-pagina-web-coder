@@ -5,20 +5,31 @@ html{
 
 /* GRID */
 
-.estetica-grid{
+.estetica-grid__contenedor{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.estetica-grid{
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     align-items: center;
-    border-top: 1px solid black;
-    border-bottom: black solid 1px;
+    border: solid black 2px;
     margin-bottom: 20px;
 }
 
 
 .img-grid{
     width: 100%;
+
+}
+
+.img-grid:hover{
+    transform: scale(1.2);
 }
 
 .subtitulo-grid{
