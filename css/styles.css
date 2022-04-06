@@ -1,0 +1,479 @@
+html{
+    font-size: 62.5%;
+}
+
+
+/* GRID */
+
+.estetica-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: black solid 1px;
+    margin-bottom: 20px;
+}
+
+
+.img-grid{
+    width: 100%;
+}
+
+.subtitulo-grid{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .subtitulo-grid{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+/* GRID */
+
+
+
+/* BARRA DE NAVEGACIÓN */
+
+.barraNavegacion{
+    display: flex;
+    top: 0;
+    position: sticky;
+    background-color: #bafaea;
+    border-top: solid #22615a 2px;
+    border-bottom: #22615a solid 2px;
+    z-index: 1;
+
+}
+
+@media(max-width:600px){
+    .barraNavegacion{
+        display: flex;
+        padding: 0;
+
+    }
+}
+
+.barra{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+a{
+    background-color: #bafaea;
+    text-decoration: none;
+    color: #22615a;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+
+}
+
+@media (max-width:600px){
+    a{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+
+/*LISTAS*/
+
+/*UBICACION*/
+
+
+
+#ubicacionContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+
+}
+
+
+.ubicacion{
+width: 80%;
+padding: 50px;
+display: grid;
+grid-template-columns: repeat(2, 50%);
+justify-items: start;
+grid-template-areas: "titulo" "mapa";
+background-color: #d5a1d6;
+
+}
+
+@media (max-width:600px){
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ubicacion__titulo{
+    grid-area: titulo;
+    color: black;
+    font-family: Roboto;
+    font-size: 4rem;
+}
+
+
+.ubicacion__mapa{
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .ubicacion__mapa{
+        height: 275px;
+    }
+}
+
+
+
+
+/*UBICACION*/
+
+/*Editor de texto*/
+
+.tituloPrincipal{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: #22615a;
+    font-size: 10rem;
+    font-family: 'Parisienne', cursive;
+
+}
+
+@media (max-width:600px){
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+}
+
+
+.fancy-undeline {
+    background-image: linear-gradient(120deg, #77A1D3,#79CBCA,#E684AE 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+    background-size: 100% 88% !important;
+}
+
+
+
+p{
+    color: #777777;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;;
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width:600px){
+    p{
+        font-size: 14px;
+    }
+}
+
+.link{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.negrita{
+    font-weight: bold;
+    color: black;
+}
+
+.hipervinculos{
+    display: inline;
+    text-decoration: underline black;
+    color: black;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+
+}
+
+@media (max-width:600px){
+    .hipervinculos{
+        font-size: 14px;
+    }
+}
+
+.subtitulo{
+    margin: 10px;
+    padding: 15px;
+    color: #218377;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+@media (max-width:600px){
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+
+
+.subtitulo2{
+    margin-left: 30px;
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+/*EDITOR DE TEXTO*/
+
+/*SECCIONES*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #d7a9d8;
+
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.facial{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    justify-items: baseline;
+    margin-top: 10px;
+
+}
+
+@media(max-width:600px){
+    .facial{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4px;
+    }
+}
+
+
+.corporal{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    margin-top: 10px;
+}
+
+@media (max-width:600px){
+    .corporal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+.redesSociales{
+    border-radius: 2%;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+@media (max-width:600px){
+    .redesSociales{
+        width: 50%;
+    }
+}
+
+footer{
+    background-color: #bafaea;
+    padding: 10px ;
+    border-top: #22615a solid 2px;
+}
+
+footer h4{
+    font-size: 16px;
+    bottom: 0;
+}
+
+/*SECCIONES*/
+
+
+/*IMAGENES*/
+
+.logo{
+    width: 300px;
+    padding-bottom: 15px;
+}
+@media (max-width:600px){
+    .logo{
+        width: 150px;
+        padding-bottom: 10px;
+    }
+}
+
+
+.tratamientoFacial-index{
+    width: 500px;
+
+}
+@media (max-width:600px){
+    .tratamientoFacial-index{
+        width: 100%;
+    }
+}
+
+
+.tratamientoCorporal-index{
+    width: 50%;
+    order: 3;
+
+}
+
+@media (max-width:600px){
+    .tratamientoCorporal-index{
+        width: 100%;
+        order: 1;
+
+
+    }
+}
+
+.tratamientoReductor{
+    width: 80%;
+
+}
+
+.appSocial{
+    width: 100px;
+}
+
+@media (max-width:600px){
+    .appSocial{
+        width: 60px;
+    }
+}
+
+/*IMAGENES*/
+
+
+/* PÁGINA TRATAMIENTOS CORPORALES Y FACIALES*/
+
+.tratamientos__contenedor{
+    display:grid;
+    grid-template-rows: auto;
+    justify-content:start;
+    justify-items:start;
+    width: 100%;
+}
+
+#imagen1{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    background-image: url(../img/tratamiento-reductor.jpg);
+
+}
+@media (max-width:600px){
+    #imagen1{
+        height: 200px;
+    }
+}
+
+#imagen2{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    background-image: url(../img/electroestimulacioin.jpg);
+}
+
+@media (max-width:600px){
+    #imagen2{
+        height: 200px;
+    }
+}
+
+
+.parallax{
+    background: #fff fixed no-repeat 50% 50% ;
+    background-size: cover;
+
+}
+
+
+.tratamientos__div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* PÁGINA TRATAMIENTOS CORPORALES */
+
+
+
+
+/* PÁGINA TRATAMIENTOS FACIALES */
+
+#foto1{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    background-image: url(../img/limpieza-facial.jpg)
+}
+
+@media (max-width:600px){
+    #foto1{
+        height: 200px;
+    }
+}
+
+
+/* PÁGINA TRATAMIENTOS FACIALES */
