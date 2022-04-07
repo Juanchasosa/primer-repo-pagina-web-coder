@@ -22,6 +22,12 @@ html{
     margin-bottom: 20px;
 }
 
+@media (max-width:600px){
+    .estetica-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
 
 .img-grid{
     width: 100%;
